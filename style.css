@@ -1,0 +1,83 @@
+/*  general css */
+*{
+    margin: center;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+body {
+    font-family: "poppins", sans-serif ;
+    background-color: #FFF5EE;
+    color: #17100f;
+}
+
+
+.hero  {
+    text-align: center;
+    padding: 30px;
+}
+
+
+.image {
+    width: 10%;
+    height: auto;
+}
+
+
+.hero h1 {
+text-align: center;
+padding:20px ;
+margin-top: -20px;
+}
+
+
+.hero p {
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    background-color: #ff4d00;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 30px;
+    border-color: white;
+    transition: background-color:0.3s, transform 0.3s;
+    padding: 15px 25px;
+}
+.btn:hover {
+background-color: #ff4d00;
+transform: scale(1.05);
+}
+
+
+.aboutAsBotton {
+    background-color: #ff4d00;
+     color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 15px;
+    border-color: white;
+    transition: background-color:0.3s, transform 0.3s;
+    padding: 10px 40px;
+    
+}
+
+.aboutAsBotton:hover {
+background-color: #ff4d00;
+transform: scale(1.05);
+
+}
+
+
+.aboutBtn {
+    text-align: center;
+}
+
+
+footer{
+    padding: 50px,20px,10px,20px;
+    text-align: center;
+}
+
