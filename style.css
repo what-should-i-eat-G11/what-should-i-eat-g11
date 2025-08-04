@@ -25,6 +25,7 @@ body {
 }
 
 
+
 .hero h1 {
 text-align: center;
 padding:20px ;
@@ -79,5 +80,43 @@ transform: scale(1.05);
 footer{
     padding: 50px,20px,10px,20px;
     text-align: center;
+}
+
+
+/* Card css*/
+
+.food-image{
+   width: 470px;
+   height: 540px;
+   border-radius: 20px 0px 0px 0px;
+}
+.youtbe-icon{
+    width: 6%;
+    height: 30x;
+    padding-bottom: 10px;
+}
+
+#video-post{
+   display:flex;
+   gap: 10px;
+}
+
+.container{
+    display: flex;
+    gap:30px;
+    margin: 110px;
+    padding-bottom: 40px;
+    background-color: #ffd390;
+    margin: 14%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.Recipe-container{
+   width: 500px;
+   height:4%;
+}
+.recipe{
+    display: flex;
+    gap: 25px;
 }
 
