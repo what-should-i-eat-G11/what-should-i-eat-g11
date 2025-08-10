@@ -155,6 +155,6 @@ function displayfood() {
 
 
 
-// const bt=document.querySelector(".btn mealSuggestion")
-// bt.addEventListener("click", displayfood)
+const bt=document.querySelector("#mealSuggestion")
+bt.addEventListener("click", displayfood)
 displayfood();
