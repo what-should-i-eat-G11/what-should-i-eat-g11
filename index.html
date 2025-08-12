@@ -1,82 +1,62 @@
-<!-- <html lang="en">
+<html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>what should i eat</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <hero section
+    <!--hero section-->
     <div class="recipe-wrapper hidden">
 
         <div class="hero">
             <img src="image.jpg" class="image" alt="chef hat">
-            <h1>🍽 what should i eat?</h1>
+            <h1 class="title">🍽 what should i eat?</h1>
             <p>click below to discover your next meal!</p>
             <button class="btn mealSuggestion" id="mealSuggestion">suggest a recipe</button>
         </div>
 
-        recipe display section
-        <div class="recipe-display"></div>
-         <div class="container">
-            <img src="vagan_chocolate_cake.jpg" class="food-image" alt="Picture">
-            <div class="Recipe-container">
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="type">Seafood</span>
-                    <span class="country">Jamaican</span>
-                </div>
-                <h2>Vegan chocolate</h2>
-                <div class="recipe-ingredients">
-                    <h3>Ingredients</h3>
-                    <div class="recipe">
-                        <ul>
-                            <li>1/4 cup - self raising flour</li>
-                            <li>1/3 cup raw - cacao</li>
-                            <li>2 flax eggs</li>
-                            <li>1 tsp - vanilla</li>
-                        </ul>
-                        <ul>
-                            <li>1/2 cup - coco sugar</li>
-                            <li>1 tsp - baking powder</li>
-                            <li>1/2 cup - almond milk</li>
-                            <li>1/2 cup - boiling water</li>
-                        </ul>
-                    </div>
-                </div>
-                <h3>Instructions</h3>
-                <p>1. Simply mix all dry ingredients with ingredients and blend altogether.
-                    <br>Bake for 45 min on 180 degrees. Decorare with some melted vegan chocolate.
-                </p>
-                <div id="video-post">
-                  <img src="play.png" class="youtbe-icon" alt=" Video Tutorial">
-                  <p>Video tutorial</p>
-                </div>  
-                <div class="Video">
-                    <iframe width="465" height="300" src="https://www.youtube.com/embed/FZq-w1t9lyw?si=n5DmVFecT4deCMTZ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        
-    </div>
+        <!--recipe display section-->
+        <div class="container"></div>
+]
+       
 
-    about section
+    <!--about section-->
     <div class="aboutBtn">
         <button class="aboutAsBotton">about us</button>
     </div>
 
+    
+    <div class="team-container">
+        <div class="member-card">
+         <img src="image-1.jpg" class="profile-picture" alt="image">
+         <h2 class="name">Omar Yusuf Hashi</h2>
+         <h5 class="role">role:  card designer</h5>
+         <h5 class="description">passionate about design and development</h5>
+         <a href="https://github.com/omarhashi755" class="github-button">github</a>
+        </div>
+
+        <div class="member-card">
+         <img src="image-2.jpg" class="profile-picture" alt="image">
+         <h2 class="name">Asma Isaac</h2>
+         <h5 class="role">role: team lead / API Creator </h5>
+         <h5 class="description">loves working with APIs and backend devolopment</h5>
+         <a href="https://github.com/AsmaTechna" class="github-button">github</a>
+        </div>
+    </div>
 
 
+''
     <footer>
         <p>powered by theMealDB API made with ❤️</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="components/Recipe.js" ></script>
 </body>
 
-</html> -->
+</html>
