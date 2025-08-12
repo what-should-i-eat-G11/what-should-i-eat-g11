@@ -1,41 +1,43 @@
 /*  general css */
-*{
-    margin: center;
+* {
+    margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 
 body {
-    font-family: "poppins", sans-serif ;
+    font-family: "poppins", sans-serif;
     background-color: #FFF5EE;
     color: #17100f;
+    height: 400px;
 }
 
 
-.hero  {
+.hero {
+    margin-bottom: 30px;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 
 .image {
-    width: 10%;
+    width: 4%;
     height: auto;
+    text-align: center;
 }
 
 
 
 .hero h1 {
-text-align: center;
-padding:20px ;
-margin-top: -20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
 .hero p {
-    margin-top: -30px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 
@@ -47,27 +49,30 @@ margin-top: -20px;
     border-color: white;
     transition: background-color:0.3s, transform 0.3s;
     padding: 15px 25px;
+    margin-top: 15px;
 }
+
 .btn:hover {
-background-color: #ff4d00;
-transform: scale(1.05);
+    background-color: #ff4d00;
+    transform: scale(1.05);
 }
 
 
 .aboutAsBotton {
     background-color: #ff4d00;
-     color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 15px;
     border-color: white;
     transition: background-color:0.3s, transform 0.3s;
     padding: 10px 40px;
-    
+    margin-bottom: 70px;
+
 }
 
 .aboutAsBotton:hover {
-background-color: #ff4d00;
-transform: scale(1.05);
+    background-color: #ff4d00;
+    transform: scale(1.05);
 
 }
 
@@ -77,46 +82,224 @@ transform: scale(1.05);
 }
 
 
-footer{
-    padding: 50px,20px,10px,20px;
+footer {
+    padding: 50px, 20px, 10px, 20px;
     text-align: center;
+
 }
 
 
 /* Card css*/
 
-.food-image{
-   width: 470px;
-   height: 540px;
-   border-radius: 20px 0px 0px 0px;
+.food-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 120px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+
 }
-.youtbe-icon{
-    width: 6%;
+
+.youtbe-icon {
+    width: 4%;
     height: 30x;
     padding-bottom: 10px;
 }
 
-#video-post{
-   display:flex;
-   gap: 10px;
+#video-post {
+    display: flex;
+    gap: 10px;
+
 }
 
-.container{
+
+.container {
     display: flex;
-    gap:30px;
-    margin: 110px;
+    flex-direction: row;
+    gap: 30px;
+    margin: 8px 90px 30px 90px;
     padding-bottom: 40px;
-    background-color: #ffd390;
-    margin: 14%;
+    background-color: #fff;
+    box-shadow: 0 5px rgb(234, 241, 241);
+    width: 90%;
     border-radius: 20px;
-    margin-top: 20px;
-}
-.Recipe-container{
-   width: 500px;
-   height:4%;
-}
-.recipe{
-    display: flex;
-    gap: 25px;
+    margin-top: ;
+    transition: all 0.3s;
+    margin-right: 452px;
 }
 
+.Recipe-container {
+    width: 500px;
+    height: 4%;
+
+
+
+
+}
+
+.type {
+    background-color: #FFEFD5;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #d35400;
+    display: inline-block;
+
+
+}
+
+.country {
+    background-color: #ffe6f0;
+    color: #c2185b;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.Recipe-container li::marker {
+    color: #e63946;
+    font-weight: bold;
+    font-size: large;
+}
+
+.recipe {
+    display: flex;
+    gap: 60px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-size: 12px;
+
+}
+
+.recipe-ingredients h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 900px;
+    margin-bottom: 60px;
+    margin-top: -45px;
+    height: 700px;
+
+}
+
+.card h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+
+}
+
+
+.instructions-list h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.instructions-list p {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.vedio-list {
+    margin-top: 30px;
+}
+
+
+.team-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    margin-right: 450px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+
+
+
+}
+
+.member-card {
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff9d61;
+    margin-bottom: 10px;
+
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.description {
+    font-size: 0.8em;
+    color: #777;
+    margin: 5px 0 15px;
+}
+
+.github-button {
+    display: inline-block;
+    background-color: #ff9d61;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #ff7f3f;
+}
+
+
+/*this is the part that makes the web responsive for different devices*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+
+    .food-image{
+        width: 100%;
+        
+    }
+
+    .recipe-ingredients{
+        padding: 20px;
+    }
+}
