@@ -288,19 +288,9 @@ footer {
 /*this is the part that makes the web responsive for different devices*/
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-        
-        
-    }
+    
 
-    .food-image{
-        width: 100%;
-        
-    }
-
-    .recipe-ingredients{
-        padding: 20px;
-    }
+    .card{
+flex-direction: column;
+    }  
 }
