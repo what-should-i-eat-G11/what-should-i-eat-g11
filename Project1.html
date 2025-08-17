@@ -12,34 +12,51 @@
 <body>
 
     <!--hero section-->
-    
+    <div class="recipe-wrapper hidden">
 
         <div class="hero">
             <img src="image.jpg" class="image" alt="chef hat">
-            <h1>🍽 what should i eat?</h1>
+            <h1 class="title">🍽 what should i eat?</h1>
             <p>click below to discover your next meal!</p>
             <button class="btn mealSuggestion" id="mealSuggestion">suggest a recipe</button>
         </div>
 
         <!--recipe display section-->
+        <div class="container"></div>
 
-        <div class="container">
 
 
+        <!--about section-->
+        <div class="aboutBtn">
+            <span strong class="aboutAsBotton">about us</span>
         </div>
 
-    
 
-    <!--about section-->
-    <div class="aboutBtn">
-        <button class="aboutAsBotton">about us</button>
-    </div>
+        <div class="team-container">
+            <div class="member-card">
+                <img src="image-1.jpg" class="profile-picture" alt="image">
+                <h2 class="name">Omar Yusuf Hashi</h2>
+                <h5 class="role">role: card and UI designer</h5>
+                <h5 class="description">passionate about design and development</h5>
+                <a href="https://github.com/omarhashi755" class="github-button">github</a>
+            </div>
 
-    <footer>
-        <p>powered by theMealDB API made with ❤️</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/components/Recipe.js"></script>
+            <div class="member-card">
+                <img src="image-2.jpg" class="profile-picture" alt="image">
+                <h2 class="name">Asma Isaac</h2>
+                <h5 class="role">role: team leader / API Creator </h5>
+                <h5 class="description">loves working with APIs and backend devolopment</h5>
+                <a href="https://github.com/AsmaTechna" class="github-button">github</a>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <p>powered by theMealDB API made with ❤️</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="components/Recipe.js"></script>
 </body>
 
-.</html>
+</html>
