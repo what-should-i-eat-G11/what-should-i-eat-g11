@@ -1,0 +1,86 @@
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 350px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      background: #ff4d00;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 15px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .tab:hover {
+      background: #f0d8a4;
+    }
+
+    .tab.active {
+      background: #ff4d00;
+      font-weight: bold;
+    }
+
+    .form-container {
+      padding: 20px;
+    }
+
+    form {
+      display: none;
+    }
+
+    form.active {
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #ff4d00;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #dfb84e;
+    }
+    @media screen {
+            
+    }

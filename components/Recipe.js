@@ -1,9 +1,12 @@
-
 /*
-    <div class="container">
+   
+  <main class="card">
+            
+
+         <div class="container">
             <img src="vagan_chocolate_cake.jpg" class="food-image" alt="Picture">
             <div class="Recipe-container">
-                <div  class="items-flex">
+                <div class="flex items-center gap-2 mb-4">
                     <span class="type">Seafood</span>
                     <span class="country">Jamaican</span>
                 </div>
@@ -11,34 +14,48 @@
                 <div class="recipe-ingredients">
                     <h3>Ingredients</h3>
                     <div class="recipe">
-                        <ul class="lis">
-                            <li class="ingr1">1/4 cup - self raising flour</li>
-                            <li  class="ingr2">1/3 cup raw - cacao</li>
-                            <li  class="ingr3">2 flax eggs</li>
-                            <li  class="ingr4">1 tsp - vanilla</li>
+                        <ul>
+                            <li>1/4 cup - self raising flour</li>
+                            <li>1/3 cup raw - cacao</li>
+                            <li>2 flax eggs</li>
+                            <li>1 tsp - vanilla</li>
                         </ul>
-                        <ul class="endlist">
-                            <li  class="ingr5">1/2 cup - coco sugar</li>
-                            <li  class="ingr6">1 tsp - baking powder</li>
-                            <li  class="ingr7">1/2 cup - almond milk</li>
-                            <li  class="ingr8">1/2 cup - boiling water</li>
+                        <ul>
+                            <li>1/2 cup - coco sugar</li>
+                            <li>1 tsp - baking powder</li>
+                            <li>1/2 cup - almond milk</li>
+                            <li>1/2 cup - boiling water</li>
                         </ul>
                     </div>
                 </div>
-                <h3 class="inst">Instructions</h3>
+                <div class="Instructions-list">
+                <h3>Instructions</h3>
                 <p>1. Simply mix all dry ingredients with ingredients and blend altogether.
                     <br>Bake for 45 min on 180 degrees. Decorare with some melted vegan chocolate.
-                </p> 
+                </p>
+                </div>
+                <div class="vedio-list">
+                <div id="video-post">
+                  <img src="play.png" class="youtbe-icon" alt=" Video Tutorial">
+                  <h3>Video tutorial</h3>
+                </div>  
                 <div class="Video">
-                    <iframe width="465" height="300" src="https://www.youtube.com/embed/FZq-w1t9lyw?si=n5DmVFecT4deCMTZ"
+                    <iframe width="455" height="290" src="https://www.youtube.com/embed/FZq-w1t9lyw?si=n5DmVFecT4deCMTZ"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+                </div>
             </div>
-    </div>*/
+        </div>
+        
+    </div>
+</main>
+*/
 
 function recipeCard(food) {
+  const mainCard=document.createElement("main")
+  mainCard.className="card"
   const mainDIV = document.createElement("div");
   mainDIV.className = "container";
 
@@ -76,7 +93,7 @@ function recipeCard(food) {
   const list = document.createElement("ul");
   list.className = "lis";
 
-  // Create ingredients dynamically (1–8)
+  
   for (let i = 1; i <= 8; i++) {
     const ingredient = food[`strIngredient${i}`];
     if (ingredient && ingredient.trim() !== "") {
@@ -91,13 +108,17 @@ function recipeCard(food) {
   Instruct.className = "inst";
   Instruct.textContent = "Instructions";
 
+  const instTitle=document.createElement("h4");
+  instTitle.className="VideTitile";
+  instTitle.textContent="Video tutorial";
+
   const instructionsText = document.createElement("p");
   instructionsText.textContent = food.strInstructions;
 
 
   //   <iframe width="560" height="315" src="https://www.youtube.com/embed/4ASaCxnTqAI?si=DSdPKy96Y9YG_Vrb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
-
+  mainCard.append(mainDIV)
   mainDIV.append(image);
   mainDIV.append(secondDIV);
   secondDIV.append(thirDIV);
@@ -110,6 +131,7 @@ function recipeCard(food) {
   fivDIV.append(list);
   secondDIV.append(Instruct);
   secondDIV.append(instructionsText);
+  secondDIV.append(instTitle)
 
   if (food.strYoutube) {
     const videoID = food.strYoutube.split("v=")[1]?.split("&")[0]; 
