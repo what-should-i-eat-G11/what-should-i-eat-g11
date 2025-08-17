@@ -1,9 +1,5 @@
 /*  general css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 
 body {
@@ -11,6 +7,7 @@ body {
     background-color: #FFF5EE;
     color: #17100f;
     height: 400px;
+   
 }
 
 
@@ -47,7 +44,7 @@ body {
     cursor: pointer;
     border-radius: 30px;
     border-color: white;
-    transition: background-color:0.3s, transform 0.3s;
+    transition: background-color-0.3s, transform 0.3s;
     padding: 15px 25px;
     margin-top: 15px;
 }
@@ -62,11 +59,11 @@ body {
     background-color: #ff4d00;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    border-radius: 15px;
+    
     border-color: white;
-    transition: background-color:0.3s, transform 0.3s;
+    
     padding: 10px 40px;
-    margin-bottom: 70px;
+    
 
 }
 
@@ -92,11 +89,11 @@ footer {
 /* Card css*/
 
 .food-image {
-    width: 100%;
-    height: auto;
+    width: 550px;
+    height: 700px;
     object-fit: cover;
     margin-bottom: 120px;
-    border-bottom-right-radius: 15px;
+    
     border-top-left-radius: 15px;
 
 
@@ -111,6 +108,7 @@ footer {
 #video-post {
     display: flex;
     gap: 10px;
+    
 
 }
 
@@ -119,25 +117,16 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin: 8px 90px 30px 90px;
-    padding-bottom: 40px;
+    
+    margin-right: 100px;
     background-color: #fff;
     box-shadow: 0 5px rgb(234, 241, 241);
-    width: 90%;
+    margin-bottom: 40px;
     border-radius: 20px;
-    margin-top: ;
     transition: all 0.3s;
-    margin-right: 452px;
+    
 }
 
-.Recipe-container {
-    width: 500px;
-    height: 4%;
-
-
-
-
-}
 
 .type {
     background-color: #FFEFD5;
@@ -146,7 +135,7 @@ footer {
     font-weight: bold;
     color: #d35400;
     display: inline-block;
-
+    gap: 20px;
 
 }
 
@@ -157,6 +146,12 @@ footer {
     border-radius: 999px;
     font-weight: bold;
     display: inline-block;
+    margin-right: 30px;
+}
+
+.items-flex{
+    gap: 15px;
+    margin-top: 10px;
 }
 
 
@@ -181,7 +176,6 @@ footer {
     margin-bottom: 10px;
 }
 
-
 .card {
     display: flex;
     flex-direction: row;
@@ -190,14 +184,15 @@ footer {
     border-radius: 15px;
     overflow: hidden;
     
-   margin: 0 auto;
+    
     text-align: left;
-    max-width: 900px;
+    
     margin-bottom: 60px;
-     margin-top: -45px;
-    height: 700px;
+    margin-top: -45px;
+    
 
 }
+
 
 .card h2 {
     font-size: 1.8em;
@@ -226,11 +221,10 @@ footer {
     padding: 30px;
     border-radius: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    margin-right: 450px;
-    margin-left: 450px;
-    margin-bottom: 100px;
-
-
+    width: 30%;
+    align-items: center;
+    margin-left: 33%;
+    margin-top: 60px;
 
 }
 
@@ -284,13 +278,127 @@ footer {
     background-color: #ff7f3f;
 }
 
+iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
 
 /*this is the part that makes the web responsive for different devices*/
+@media (max-width: 1024px) {
+    
+    .container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .food-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .team-container {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 30px;
+    }
+
+    .recipe {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image,
+    .youtbe-icon {
+        width: 8%;
+    }
+
+}
+
+
 
 @media (max-width: 768px) {
-    
+    body {
+        padding-left: 20px;
+    }
 
-    .card{
-flex-direction: column;
-    }  
+    .hero {
+        padding: 20px;
+    }
+
+    .btn,
+    .aboutAsBotton {
+        padding: 10px 20px;
+        font-size: 14px;
+        
+    }
+
+    .card h2 {
+        font-size: 1.4em;
+    }
+
+    .instructions-list p,
+    .description {
+        font-size: 0.9em;
+    }
+
+    .container {
+        margin: 10px;
+        gap: 20px;
+    }
+
+    .team-container {
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    .image,
+    .youtbe-icon {
+        width: 12%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .btn,
+    .aboutAsBotton {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 100%;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .recipe {
+        padding: 10px;
+    }
+
+    .team-container {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .image,
+    .youtbe-icon {
+        width: 16%;
+    }
+
+    #video-post {
+        flex-direction: column;
+    }
 }
